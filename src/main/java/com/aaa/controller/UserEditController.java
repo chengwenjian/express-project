@@ -62,9 +62,9 @@ public class UserEditController {
 
     @RequestMapping("branchSelect")
     @ResponseBody
-    public LayuiResult<Branch> branchSel(HttpSession session, Branch branch) {
-        LayuiResult<Branch> result = new LayuiResult<Branch>();
-        List<Branch> branches = wbranchService.findBranch();
+    public LayuiResult<Wbranch> branchSel(HttpSession session, Wbranch wbranch) {
+        LayuiResult<Wbranch> result = new LayuiResult<Wbranch>();
+        List<Wbranch> branches = wbranchService.findBranch();
         result.setData(branches);
         return result;
     }

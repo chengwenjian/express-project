@@ -59,7 +59,7 @@
     form.on('submit(formDemo)', function(data){
 
             $.ajax({
-                url:'/express-project/itemEdit/addItem',
+                url:'/itemEdit/addItem',
                 method:'post',
                 data:{
                     itemtype:$("#itemtype").val(),

@@ -65,7 +65,7 @@
     form.on('submit(formDemo)', function(data){
 
             $.ajax({
-                url:'/express-project/payEdit/addPay',
+                url:'/payEdit/addPay',
                 method:'post',
                 data:{
                     paytype:$("#paytype").val(),

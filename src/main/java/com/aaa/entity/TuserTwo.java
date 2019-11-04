@@ -67,4 +67,5 @@ public class TuserTwo {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+}
 

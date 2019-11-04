@@ -88,7 +88,7 @@
         form.on('submit(formDemo2)', function(data){
             //alert(data.id);
             $.ajax({
-                url:'/express-project/userEdit/edit',
+                url:'/userEdit/edit',
                 method:'post',
                 data:{
                     id:$("#id").val(),

@@ -59,7 +59,7 @@
     form.on('submit(formDemo)', function(data){
 
             $.ajax({
-                url:'/express-project/transEdit/addTrans',
+                url:'/transEdit/addTrans',
                 method:'post',
                 data:{
                     transtype:$("#transtype").val(),

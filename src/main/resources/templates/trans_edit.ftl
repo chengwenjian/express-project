@@ -53,7 +53,7 @@
             elem:'#demo'
             ,width:1050    //jquery的id选择器   也就是table的id
             ,height: 495
-            ,url: '/express-project/transEdit/selAll'     //数据接口
+            ,url: '/transEdit/selAll'     //数据接口
             ,title: '运输类型维护'
             ,totalRow: true
            ,limit:10
@@ -71,7 +71,7 @@
             var data = obj.data;
             if(obj.event === 'del'){
                 layer.confirm('真的要删除吗？', function (index) {
-                    $.post("/express-project/transEdit/delTrans",{'transid':data.transid},function(result)
+                    $.post("/transEdit/delTrans",{'transid':data.transid},function(result)
                             {
                                 layer.msg(result.msg, {
                                     icon: 1,
@@ -100,7 +100,7 @@
                 type: 2,
                 skin: 'layui-layer-rim', //加上边框
                 area: ['840px', '480px'], //宽高
-                content: "/express-project/transEdit/add",
+                content: "/transEdit/add",
                 end: function () {
                     location.reload();
                 }

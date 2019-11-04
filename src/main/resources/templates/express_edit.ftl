@@ -56,7 +56,7 @@
             elem:'#demo'
             ,width:1250    //jquery的id选择器   也就是table的id
             ,height: 495
-            ,url: '/express-project/expressSel/selAll'     //数据接口
+            ,url: '/expressSel/selAll'     //数据接口
             ,title: '签收单查询'
             ,totalRow: true
            ,limit:10
@@ -87,7 +87,7 @@
                     shadeClose:true,          //点击遮罩层外区域关闭遮罩层
                     area: ['780px', '500px'],    //弹出框大小
                     anim: 1,              //弹出动画
-                    content:'/express-project/expressSel/sel?expid='+data.expid,
+                    content:'/expressSel/sel?expid='+data.expid,
                     end: function () {
                         location.reload();
                     }
@@ -123,7 +123,7 @@
                 type: 2,
                 skin: 'layui-layer-rim', //加上边框
                 area: ['840px', '480px'], //宽高
-                content: "/express-project/expEdit/add",
+                content: "/expEdit/add",
                 end: function () {
                     location.reload();
                 }

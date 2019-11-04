@@ -1,6 +1,6 @@
 package com.aaa.entity;
 
-public class Branch {
+public class Wbranch {
     private Integer braid;
     private String bracode;
     private String braname;

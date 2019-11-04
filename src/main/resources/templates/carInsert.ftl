@@ -100,7 +100,7 @@
         });
 
         $.ajax({
-            url:"/express-project/carEdit/selType",
+            url:"/carEdit/selType",
             type:"post",
             dataType:"json",
             success: function (data) {
@@ -113,7 +113,7 @@
     form.on('submit(formDemo)', function(data){
 
             $.ajax({
-                url:'/express-project/carEdit/toAdd',
+                url:'/carEdit/toAdd',
                 method:'post',
                 data:{
                     braname:$("#braname").val(),

@@ -152,7 +152,7 @@
         form.on('submit(formDemo)', function(data){
 
             $.ajax({
-                url:'/express-project/carEdit/updateCar',
+                url:'/carEdit/updateCar',
                 method:'post',
                 data:{
                     vehid:$("#vehid").val(),

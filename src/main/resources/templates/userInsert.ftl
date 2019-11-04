@@ -88,7 +88,7 @@
         form.on('submit(formDemo)', function(data){
 
             $.ajax({
-                url:'/express-project/userEdit/toInsert',
+                url:'/userEdit/toInsert',
                 method:'post',
                 data:{
                     braname:$("#braname").val(),

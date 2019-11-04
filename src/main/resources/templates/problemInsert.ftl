@@ -65,7 +65,7 @@
     form.on('submit(formDemo)', function(data){
 
             $.ajax({
-                url:'/express-project/problemEdit/addProblem',
+                url:'/problemEdit/addProblem',
                 method:'post',
                 data:{
                     protype:$("#protype").val(),

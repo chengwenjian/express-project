@@ -62,7 +62,7 @@
             elem:'#demo'
             ,width:1050    //jquery的id选择器   也就是table的id
             ,height: 495
-            ,url: '/express-project/userEdit/userSelect'     //数据接口
+            ,url: '/userEdit/userSelect'     //数据接口
             ,title: '员工维护'
             ,page:true           //是否开启分页
             ,totalRow: true
@@ -84,7 +84,7 @@
                 layer.msg('ID：'+ data.id + ' 的查看操作');
             } else if(obj.event === 'del'){
                 layer.confirm('真的要删除吗？', function (index) {
-                    $.post("/express-project/userEdit/del",{'id':data.id},function(result)
+                    $.post("/userEdit/del",{'id':data.id},function(result)
                             {
                                 layer.msg(result.msg, {
                                     icon: 1,
@@ -104,7 +104,7 @@
                     shadeClose:true,          //点击遮罩层外区域关闭遮罩层
                     area: ['580px', '500px'],    //弹出框大小
                     anim: 1,              //弹出动画
-                    content:'/express-project/userEdit/seluser?id='+data.id,
+                    content:'/userEdit/seluser?id='+data.id,
                     end: function () {
                         location.reload();
                     }
@@ -140,7 +140,7 @@
                 type: 2,
                 skin: 'layui-layer-rim', //加上边框
                 area: ['840px', '480px'], //宽高
-                content: "/express-project/userEdit/tolist",
+                content: "/userEdit/tolist",
                 end: function () {
                     location.reload();
                 }

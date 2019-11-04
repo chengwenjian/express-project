@@ -6,7 +6,7 @@
 	<groupId>com.aaa</groupId>
 	<artifactId>manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>manager</name>
 	<description>The personal blog of Zhaojiatao for share something about java...</description>

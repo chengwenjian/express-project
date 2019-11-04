@@ -61,7 +61,7 @@
             elem:'#demo'
             ,width:1050    //jquery的id选择器   也就是table的id
             ,height: 495
-            ,url: '/express-project/carEdit/selCar'     //数据接口
+            ,url: '/carEdit/selCar'     //数据接口
             ,title: '车辆维护'
             ,page:true           //是否开启分页
             ,totalRow: true
@@ -97,7 +97,7 @@
             var data = obj.data;
             if(obj.event === 'del'){
                 layer.confirm('真的要删除吗？', function (index) {
-                    $.post("/express-project/carEdit/delCar",{'vehid':data.vehid},function(result)
+                    $.post("/carEdit/delCar",{'vehid':data.vehid},function(result)
                             {
                                 layer.msg(result.msg, {
                                     icon: 1,
@@ -120,7 +120,7 @@
                     shadeClose:true,          //点击遮罩层外区域关闭遮罩层
                     area: ['580px', '500px'],    //弹出框大小
                     anim: 1,              //弹出动画
-                    content:'/express-project/carEdit/selCarTwo?vehid='+data.vehid,
+                    content:'/carEdit/selCarTwo?vehid='+data.vehid,
                     end: function () {
                         location.reload();
                     }
@@ -156,7 +156,7 @@
                 type: 2,
                 skin: 'layui-layer-rim', //加上边框
                 area: ['840px', '480px'], //宽高
-                content: "/express-project/carEdit/add",
+                content: "/carEdit/add",
                 end: function () {
                     location.reload();
                 }

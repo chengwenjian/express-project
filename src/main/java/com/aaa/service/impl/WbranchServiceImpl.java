@@ -3,6 +3,7 @@ package com.aaa.service.impl;
 
 import com.aaa.entity.Branch;
 import com.aaa.entity.TuserTwo;
+import com.aaa.entity.Wbranch;
 import com.aaa.mapper.TuserTwoMapper;
 import com.aaa.mapper.WbranchMapper;
 import com.aaa.service.TuserTwoService;
@@ -15,11 +16,11 @@ import java.util.List;
 
 @Service
 @Transactional
-public class WbranchServiceImpl extends BaseService<Branch> implements WbranchService {
+public class WbranchServiceImpl extends BaseService<Wbranch> implements WbranchService {
     @Resource
     private WbranchMapper wbranchMapper;
     @Override
-    public List<Branch> findBranch() {
+    public List<Wbranch> findBranch() {
         return wbranchMapper.findBranch();
     }
 }

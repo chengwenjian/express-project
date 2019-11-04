@@ -53,7 +53,7 @@
             elem:'#demo'
             ,width:1050    //jquery的id选择器   也就是table的id
             ,height: 495
-            ,url: '/express-project/expEdit/selAll'     //数据接口
+            ,url: '/expEdit/selAll'     //数据接口
             ,title: '快递类型维护'
             ,totalRow: true
            ,limit:10
@@ -71,7 +71,7 @@
             var data = obj.data;
             if(obj.event === 'del'){
                 layer.confirm('真的要删除吗？', function (index) {
-                    $.post("/express-project/expEdit/delItem",{'exptypeid':data.exptypeid},function(result)
+                    $.post("/expEdit/delItem",{'exptypeid':data.exptypeid},function(result)
                             {
                                 layer.msg(result.msg, {
                                     icon: 1,
@@ -100,7 +100,7 @@
                 type: 2,
                 skin: 'layui-layer-rim', //加上边框
                 area: ['840px', '480px'], //宽高
-                content: "/express-project/expEdit/add",
+                content: "/expEdit/add",
                 end: function () {
                     location.reload();
                 }
