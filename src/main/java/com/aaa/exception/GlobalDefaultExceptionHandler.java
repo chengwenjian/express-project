@@ -47,13 +47,13 @@ public class GlobalDefaultExceptionHandler {
         ModelAndView mav = new ModelAndView();
         mav.addObject("exception", e);
         mav.addObject("url", req.getRequestURL());
-        mav.setViewName("error/errordeal");
+        mav.setViewName("errordeal.ftl");
 
         if(e instanceof org.apache.shiro.authz.UnauthorizedException){
-            mav.setViewName("error/unauthorized");
+            mav.setViewName("unauthorized.ftl");
         }
         if(e instanceof org.apache.shiro.authz.AuthorizationException){
-            mav.setViewName("error/unauthorized");
+            mav.setViewName("unauthorized.ftl");
         }
 
         return mav;

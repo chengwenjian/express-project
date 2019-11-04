@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aaa.mapper.BranchMapper">
+    <select id="branchList" parameterType="map" resultType="map">
+   SELECT * FROM branch WHERE brasuoshu=#{braname} and brarank=(#{brarank}+1) LIMIT #{begin},#{end}
+    </select >
+
+    <select id="selectCount"  parameterType="map" resultType="int">
+        SELECT COUNT(bracode) FROM branch WHERE brarank=(#{brarank}+1) AND brasuoshu=#{braname}
+    </select>
+
+    <insert id="insertBranch" parameterType="com.aaa.entity.Branch">
+        INSERT INTO branch(bracode,braname,branameEnglish,braprovince,bracity,bracounty,braaddress,brasuoshu,brarank,braprincipal,braphone,braremark,bratime)
+        VALUES (#{bracode},#{braname},#{branameEnglish},#{braprovince},#{bracity},#{bracounty},#{braaddress},#{brasuoshu},#{brarank},#{braprincipal},#{braphone},#{braremark},#{bratime})
+    </insert>
+
+    <select id="updateList"  parameterType="com.aaa.entity.Branch" resultType="com.aaa.entity.Branch">
+        SELECT * FROM branch WHERE bracode=#{bracode}
+    </select>
+   <update id="update" parameterType="com.aaa.entity.Branch">
+update branch set braname=#{braname},braaddress=#{braaddress},braprincipal=#{braprincipal},braphone=#{braphone},braremark=#{braremark} where bracode=#{bracode}
+   </update>
+    <delete id="del" parameterType="com.aaa.entity.Branch">
+        delete from branch where bracode=#{bracode}
+    </delete>
+</mapper>

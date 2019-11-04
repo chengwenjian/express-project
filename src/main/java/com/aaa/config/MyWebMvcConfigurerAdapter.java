@@ -20,7 +20,7 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
         registry.addViewController("/tologin").setViewName("login");
         registry.addViewController("/welcome").setViewName("welcome");
         registry.addViewController("/error/errordeal").setViewName("error/errordealogin");
-        registry.addViewController("/error/unauthorized").setViewName("error/unauthorized");
+        registry.addViewController("/error/unauthorized").setViewName("unauthorized.ftl");
         registry.addViewController("/main").setViewName("main");
         super.addViewControllers(registry);
     }

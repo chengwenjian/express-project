@@ -10,7 +10,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="icon" href="${basePath!}/static/logo.png">
+	<link rel="icon" href="${basePath!}/static/logo.jpg">
 	<link rel="stylesheet" href="${basePath!}/static/layui/css/layui.css" media="all" />
 	<link rel="stylesheet" href="${basePath!}/static/css/index.css" media="all" />
 
@@ -20,7 +20,7 @@
 		<!-- 顶部 -->
 		<div class="layui-header header">
 			<div class="layui-main mag0">
-				<a href="${basePath!}/welcome" class="logo">DMW.Blog</a>
+				<a href="${basePath!}/welcome" class="logo">远方物流系统</a>
 				<!-- 显示/隐藏菜单 -->
 				<a href="javascript:;" class="seraph hideMenu icon-caidan"></a>
 				<!-- 顶级菜单 -->
@@ -69,7 +69,7 @@
 						<a href="javascript:;"><i class="seraph icon-lock"></i><cite>锁屏</cite></a>
 					</li>
 					<li class="layui-nav-item" id="userInfo">
-						<a href="javascript:;"><img src="${basePath!}/static/logo.png" class="layui-nav-img userAvatar" width="35" height="35"><cite class="adminName"><div id="userInfoId"></div></cite></a>
+						<a href="javascript:;"><img src="${basePath!}/static/logo.jpg" class="layui-nav-img userAvatar" width="35" height="35"><cite class="adminName"><div id="userInfoId"></div></cite></a>
 						<dl class="layui-nav-child">
 								<dd pc><a href="javascript:;" class="changeSkin"><i class="layui-icon">&#xe61b;</i><cite>更换皮肤</cite></a></dd>
 							<dd><a href="${basePath!}/user/logout" class="signOut"><i class="seraph icon-tuichu"></i><cite>退出</cite></a></dd>
@@ -81,7 +81,7 @@
 		<!-- 左侧导航 -->
 		<div class="layui-side layui-bg-black">
 			<div class="user-photo">
-				<a class="img" title="我的头像" ><img src="${basePath!}/static/logo.png" class="userAvatar"></a>
+				<a class="img" title="我的头像" ><img src="${basePath!}/static/logo.jpg" class="userAvatar"></a>
 				<p>你好！<span class="userName">${currentUser.trueName!}</span>, 欢迎登录</p>
 			</div>
 
@@ -131,7 +131,7 @@
 		</div>
 		<!-- 底部 -->
 		<div class="layui-footer footer">
-			<p><span>Logistics @2019 DMW</span></p>
+			<p><span>远方物流     品质至上</span></p>
 		</div>
 	</div>
 

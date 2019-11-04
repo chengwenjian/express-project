@@ -24,9 +24,9 @@
 
         <!--数据库链接地址账号密码，这里由于我使用的是根据开发和生产分离的配置文件，所以这里直接写上了-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/ceshi?useUnicode=true&amp;characterEncoding=utf-8"
+                        connectionURL="jdbc:mysql://localhost:3306/expressproject?useUnicode=true&amp;characterEncoding=utf-8"
                         userId="root"
-                        password="123@qwe">
+                        password="123456">
         </jdbcConnection>
 
         <javaTypeResolver>

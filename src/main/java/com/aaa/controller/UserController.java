@@ -79,6 +79,7 @@ public class UserController {
 			//Tuser currentUser=tuserService.findByUserName(userName);
 			Example tuserExample=new Example(Tuser.class);
 			tuserExample.or().andEqualTo("userName",userName);
+			session.setAttribute("userName", userName);
 			Tuser currentUser=tuserService.selectByExample(tuserExample).get(0);
 			session.setAttribute("currentUser", currentUser);
 			//List<Trole> roleList=troleService.findByUserId(currentUser.getId());
@@ -87,6 +88,7 @@ public class UserController {
 			map.put("roleSize", roleList.size());
 			map.put("success", true);
 			//logService.save(new Log(Log.LOGIN_ACTION,"用户登录")); // 写入日志
+
 			return map;
 		}catch(Exception e){
 			e.printStackTrace();

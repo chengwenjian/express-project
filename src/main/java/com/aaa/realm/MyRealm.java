@@ -1,8 +1,6 @@
 package com.aaa.realm;
 
 import com.aaa.entity.Tmenu;
-import com.aaa.entity.Tmenu;
-import com.aaa.entity.Trole;
 import com.aaa.entity.Trole;
 import com.aaa.entity.Tuser;
 import com.aaa.mapper.TmenuMapper;

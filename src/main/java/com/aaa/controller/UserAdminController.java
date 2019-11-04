@@ -45,7 +45,7 @@ public class UserAdminController {
     @RequestMapping("/tousermanage")
     @RequiresPermissions(value = {"用户管理"})
     public String tousermanage() {
-        return "power/user";
+        return "user.ftl";
     }
 
     /**
@@ -314,7 +314,7 @@ public class UserAdminController {
     @RequestMapping("/toUpdatePassword")
     @RequiresPermissions(value = {"修改密码"})
     public String toUpdatePassword() {
-        return "power/updatePassword";
+        return "updatePassword.ftl";
     }
 
 

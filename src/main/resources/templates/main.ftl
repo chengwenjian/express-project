@@ -13,11 +13,11 @@
 	<link rel="stylesheet" href="${basePath!}/static/css/public.css" media="all" />
 </head>
 <body class="childrenBody">
-	<blockquote class="layui-elem-quote layui-bg-green">
-		<div id="nowTime"></div>
-	</blockquote>
+<blockquote class="layui-elem-quote layui-bg-green">
+	<div id="nowTime"></div>
+</blockquote>
 
-    <script type="text/javascript" src="${basePath!}/static/layui/layui.js"></script>
-	<script type="text/javascript" src="${basePath!}/static/js/main.js"></script>
+<script type="text/javascript" src="${basePath!}/static/layui/layui.js"></script>
+<script type="text/javascript" src="${basePath!}/static/js/main.js"></script>
 </body>
 </html>
