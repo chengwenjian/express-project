@@ -4,6 +4,7 @@ public class Branch {
     private Integer braid;
     private String bracode;
     private String braname;
+
     private String braprovince;
     private String bracity;
     private String bracounty;
@@ -16,25 +17,6 @@ public class Branch {
     private String braremark;
     private String bratime;
 
-    @Override
-    public String toString() {
-        return "Branch{" +
-                "braid=" + braid +
-                ", bracode='" + bracode + '\'' +
-                ", braname='" + braname + '\'' +
-                ", braprovince='" + braprovince + '\'' +
-                ", bracity='" + bracity + '\'' +
-                ", bracounty='" + bracounty + '\'' +
-                ", braaddress='" + braaddress + '\'' +
-                ", brasuoshu='" + brasuoshu + '\'' +
-                ", brarank=" + brarank +
-                ", braprincipal='" + braprincipal + '\'' +
-                ", braphone='" + braphone + '\'' +
-                ", brapicture='" + brapicture + '\'' +
-                ", braremark='" + braremark + '\'' +
-                ", bratime='" + bratime + '\'' +
-                '}';
-    }
 
     public Integer getBraid() {
         return braid;
@@ -59,6 +41,7 @@ public class Branch {
     public void setBraname(String braname) {
         this.braname = braname;
     }
+
 
     public String getBraprovince() {
         return braprovince;

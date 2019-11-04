@@ -12,4 +12,6 @@ public interface TmenuMapper extends MyMapper<Tmenu> {
 
     List<Tmenu> selectByParentIdAndRoleId(HashMap<String, Object> paraMap);
 
+
+
 }

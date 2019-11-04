@@ -9,13 +9,13 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="icon" href="${basePath!}/static/logo.png">
+	<link rel="icon" href="${basePath!}/static/logo.jpg">
 	<link rel="stylesheet" href="${basePath!}/static/layui/css/layui.css" media="all" />
 	<link rel="stylesheet" href="${basePath!}/static/css/public.css" media="all" />
 </head>
 <body class="loginBody">
 	<form class="layui-form">
-		<div class="login_face"><img src="${basePath!}/static/logo.png" class="userAvatar"></div>
+		<div class="login_face"><img src="${basePath!}/static/logo.jpg" class="userAvatar"></div>
 		<div class="layui-form-item input-item">
 			<label for="userName">用户名</label>
 			<input type="text" placeholder="请输入用户名" autocomplete="off" id="userName" name="userName" class="layui-input" lay-verify="required|userName">

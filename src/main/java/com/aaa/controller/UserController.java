@@ -89,6 +89,7 @@ public class UserController {
 			map.put("roleSize", roleList.size());
 			map.put("success", true);
 			//logService.save(new Log(Log.LOGIN_ACTION,"用户登录")); // 写入日志
+
 			return map;
 		}catch(Exception e){
 			e.printStackTrace();

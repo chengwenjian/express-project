@@ -25,6 +25,7 @@
 	</properties>
 
 	<dependencies>
+
 		<!--使用freemarker的starter，里面包含spring-boot-starter-web组件-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -183,7 +184,22 @@
 				</configuration>
 			</plugin>
 		</plugins>
+        <resources>
+		<resource>
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.xml</include>
+			</includes>
+			<filtering>false</filtering>
+		</resource>
+		<resource>
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>**/*.*</include>
+			</includes>
+			<filtering>false</filtering>
+		</resource>
+
+	</resources>
 	</build>
-
-
 </project>
