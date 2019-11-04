@@ -78,7 +78,9 @@ public class UserController {
 			String userName=(String) SecurityUtils.getSubject().getPrincipal();
 			//Tuser currentUser=tuserService.findByUserName(userName);
 			Example tuserExample=new Example(Tuser.class);
+			session.setAttribute("userName",userName);
 			tuserExample.or().andEqualTo("userName",userName);
+
 			Tuser currentUser=tuserService.selectByExample(tuserExample).get(0);
 			session.setAttribute("currentUser", currentUser);
 			//List<Trole> roleList=troleService.findByUserId(currentUser.getId());

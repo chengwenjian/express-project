@@ -12,4 +12,5 @@
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="remarks" jdbcType="VARCHAR" property="remarks" />
   </resultMap>
+
 </mapper>
