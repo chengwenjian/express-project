@@ -1,10 +1,10 @@
 package com.aaa.entity;
-//网点表
+
 public class Branch {
     private Integer braid;
     private String bracode;
     private String braname;
-    private String branameEnglish;
+
     private String braprovince;
     private String bracity;
     private String bracounty;
@@ -16,6 +16,7 @@ public class Branch {
     private String brapicture;
     private String braremark;
     private String bratime;
+
 
     public Integer getBraid() {
         return braid;
@@ -41,13 +42,6 @@ public class Branch {
         this.braname = braname;
     }
 
-    public String getBranameEnglish() {
-        return branameEnglish;
-    }
-
-    public void setBranameEnglish(String branameEnglish) {
-        this.branameEnglish = branameEnglish;
-    }
 
     public String getBraprovince() {
         return braprovince;

@@ -12,8 +12,6 @@
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="remarks" jdbcType="VARCHAR" property="remarks" />
   </resultMap>
-  <select id="selectall" resultType="com.aaa.entity.Tuser" parameterType="com.aaa.entity.Tuser">
-          select * from t_user where id=1
-  </select>
+
 
 </mapper>
